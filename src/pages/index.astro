@@ -1,16 +1,237 @@
 ---
-
+import "../CSS/global.css";
+import Header from "../components/header.astro";
+import Socials from "../components/socials.astro";
+import Slider from "../components/slider.astro";
+import Om from "../components/om.astro";
+import Kontakt from "../components/kontakt.astro";
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Hannah Isabel Grenade</title>
+  </head>
+  <body>
+	<Header />
+    <main>
+      <section class="fullvh">	
+        <div class="hero">
+          <h1>
+            Hejsa 👋 <br /> Jeg er Hannah - kommende frontend designer som
+            elsker at <span class="typewriter"> </span>
+          </h1>
+          <Socials />
+        </div>
+      </section>
+	  <Om/>
+	  <Slider />
+	  <Kontakt />
+    </main>
+  </body>
 </html>
+
+
+<style>
+ span {
+	font-size: 3.4rem;
+ }
+  h1 {
+    font-size: 2.5rem;
+  }
+  .fullvh {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+	
+  }
+  .hero {
+    max-width: 80vw;
+  }
+
+  @media (min-width: 800px) {
+    h1 {
+      font-size: 3.5rem;
+    }
+	  .hero {
+    max-width: 70vw;
+  }
+  }
+
+
+
+  /* typewriter animation */
+
+  .typewriter::before {
+    content: "";
+    animation: typing 15s infinite;
+  }
+
+  .typewriter::after {
+    content: "";
+    border-right: 2px solid black;
+    animation: blink 0.8s linear infinite;
+  }
+
+  @keyframes blink {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+
+  @keyframes typing {
+    0% {
+      content: "";
+    }
+    2% {
+      content: "k";
+    }
+    4% {
+      content: "ko";
+    }
+    6% {
+      content: "kod";
+    }
+    10% {
+      content: "kode";
+    }
+    11% {
+      content: "kod";
+    }
+    12% {
+      content: "ko";
+    }
+    13% {
+      content: "k";
+    }
+    16% {
+      content: "";
+    }
+
+    20% {
+      content: "d";
+    }
+    22% {
+      content: "de";
+    }
+    24% {
+      content: "des";
+    }
+    26% {
+      content: "desi";
+    }
+    28% {
+      content: "desig";
+    }
+    30% {
+      content: "design";
+    }
+    34% {
+      content: "designe";
+    }
+    35% {
+      content: "design";
+    }
+    36% {
+      content: "desig";
+    }
+    37% {
+      content: "desi";
+    }
+    38% {
+      content: "des";
+    }
+    39% {
+      content: "de";
+    }
+    40% {
+      content: "d";
+    }
+    45% {
+      content: "";
+    }
+
+    50% {
+      content: "v";
+    }
+    52% {
+      content: "væ";
+    }
+    54% {
+      content: "vær";
+    }
+    56% {
+      content: "være";
+    }
+    58% {
+      content: "være ";
+    }
+    60% {
+      content: "være k";
+    }
+    62% {
+      content: "være kr";
+    }
+    64% {
+      content: "være kre";
+    }
+    66% {
+      content: "være krea";
+    }
+    68% {
+      content: "være kreat";
+    }
+    70% {
+      content: "være kreati";
+    }
+    74% {
+      content: "være kreativ";
+    }
+    75% {
+      content: "være kreati";
+    }
+    76% {
+      content: "være kreat";
+    }
+    77% {
+      content: "være krea";
+    }
+    78% {
+      content: "være kre";
+    }
+    79% {
+      content: "være kr";
+    }
+    80% {
+      content: "være k";
+    }
+    81% {
+      content: "være ";
+    }
+    82% {
+      content: "være";
+    }
+    83% {
+      content: "vær";
+    }
+    84% {
+      content: "væ";
+    }
+    85% {
+      content: "v";
+    }
+    86% {
+      content: "";
+    }
+    100% {
+      content: " ";
+    }
+  }
+</style>

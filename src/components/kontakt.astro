@@ -1,0 +1,45 @@
+---
+import "../CSS/global.css"
+import Socials from "./socials.astro";
+---
+
+<section id="sFour">
+  <img src="/img/billede2.png" alt="picture" />
+  <div class="links">
+    <Socials />
+  </div>
+  <h2>Kunne jeg være din nye praktikant?</h2>
+  <div class="kontakt">
+    <a href=""><button>Send mig en mail!</button></a>
+  </div>
+</section>
+
+<style>
+
+section {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #E6E4D6;
+    margin-inline:-5em;
+    margin-top: 2em;
+}
+.links {
+display: flex;
+gap: 1em;
+margin-top: 2em;
+}
+
+
+.links {
+    justify-content: center;
+    margin-top: 1em;
+    gap: 0.5em;
+}
+
+img {
+    max-width: 150px;
+}
+</style>

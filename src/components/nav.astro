@@ -1,0 +1,37 @@
+---
+import "../CSS/global.css";
+---
+
+<nav>
+    <a href="">Hvem er jeg?</a>
+    <a href="">Projekter</a>
+    <a href=""> Kontakt mig </a>
+</nav>
+
+<style>
+
+nav {
+    display: flex;
+    gap: 2em;
+    align-items: baseline;
+}
+
+a:hover::after {
+  width: 80%;
+}
+/* a:hover {
+  color: blue;
+} */
+a::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  position: absolute;
+  bottom: -5px;
+  left: 0%;
+  background: #E6E4D6;
+  transition: width 0.4s;
+}
+
+
+</style>

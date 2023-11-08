@@ -1,0 +1,115 @@
+---
+import "../CSS/global.css";
+import Projekt from "../components/projekt.astro";
+---
+ <h2>Projekter <span>.</span></h2>
+<section>
+
+  <Projekt 
+    billede="omada.png"
+    overskrift="Omada Wine & Deli"
+    beskrivelse="SoMe kampagne, bud på nye produktbilleder samt redesign af hjemmeside til Omada Wine & Deli på Østerbro."
+    label1="Astro"
+    label2="Redesign"
+    label3="Content"
+    label4="Video"
+  />
+ 
+  <Projekt 
+    billede="toDo.png"
+    overskrift="ToDo app"
+    beskrivelse="Mini Todo webapp ved brug af Javascript og localeStorage."
+    label1="LocaleStorage"
+    label2="HTML & CSS"
+    label3="Javascript"
+    label4="Mini-projekt"
+  />
+
+  <Projekt 
+    billede="tommis.png"
+    overskrift="Tommi's Burger Joint"
+    beskrivelse="Website, SoMe content og markedsføringsplan til Tommi's Burger Joint."
+    label1="Astro"
+    label2="CSS"
+    label3="Javascript"
+    label4="redesign"
+  />
+
+  <Projekt
+    billede="sakura.png"
+    overskrift="Sakura Festival"
+    beskrivelse="Redesign af hjemmeside med fokus på forbedret brugeroplevelse på Sakura Festivals website."
+    label1="Astro"
+    label2="Webdesign"
+  />
+
+   <Projekt
+    billede="coffeeFirst.png"
+    overskrift="Coffee First"
+    beskrivelse="Redesign af hjemmeside og SoMe video til lokal hunde cafe på Vesterbro."
+    label1="HTML"
+    label2="CSS"
+    label3="Javascript"
+    label4="redesign"
+  />
+
+  <Projekt
+    billede="styleOpg.png"
+    overskrift="Style opgave"
+    beskrivelse="Mini projekt med forskellige layouts og ét gennemgående styletile."
+    label1="Figma"
+    label2="CSS"
+    label3="Layout"
+    label4="Mini-projekt"
+  />
+</section>
+
+<style>
+    section {
+        margin: 0;
+        margin-left: -1em;
+    }
+
+    @media (max-width:600px) {
+     section {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    gap: 1em;
+
+    scroll-snap-type: x mandatory;
+    
+  }}
+      @media (min-width:600px) {
+     section {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    gap: 1em;
+    margin:2em;
+    margin-left: -1em;
+       margin-right: -1em;
+    padding-top: 2em;
+    scroll-snap-type: x mandatory;
+    
+  }
+  }
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+    article {
+    scroll-snap-type:mandatory;
+  }
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(255, 10, 10, 0.5);
+  box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+}
+</style>

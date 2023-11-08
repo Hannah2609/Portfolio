@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+body {
+  min-height: 100dvh;
+  line-height: 1.5;
+  font-family: 'Hind', sans-serif;
+    margin: 0 auto;
+    padding: 0 5%;
+    max-width: 1500px;
+}
+
+p {
+  text-wrap: pretty;
+  font-size: 1.2rem;
+}
+
+h1,
+h2,
+h3 {
+  text-wrap: balance;
+   font-weight: 400;
+}
+
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+ color: black;
+ text-decoration: none;
+ font-weight: 400;
+   font-size: 1.1rem;
+     position: relative;
+}
+
+
+button {
+    border: none;
+    padding: 10px 30px;
+    border-radius: 20px;
+    background-color: #0F2F4B;
+    color: white;
+    font-weight: 300;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+span {
+    color: #E6E4D6;
+  font-size: 3rem;
+  line-height: 0;
+}
