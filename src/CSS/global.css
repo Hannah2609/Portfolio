@@ -5,7 +5,6 @@
 }
 body {
   min-height: 100dvh;
-  line-height: 1.5;
   font-family: 'Hind', sans-serif;
     margin: 0 auto;
     padding: 0 5%;
@@ -25,7 +24,7 @@ h3 {
 }
 
   h2 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 500;
   }
 img {
@@ -47,14 +46,31 @@ button {
     padding: 10px 30px;
     border-radius: 20px;
     background-color: #0F2F4B;
-    color: white;
+    color: #E6E4D6;
     font-weight: 300;
     font-size: 1rem;
     cursor: pointer;
+    transition: all .2 ease;
+     -webkit-transition: all .2s ease; 
+}
+button:hover {
+    background-color: #E6E4D6;
+    color: #0F2F4B;
+    font-weight: 400;
+        box-shadow: 0px 0px 20px 11px rgba(15, 47, 75, 0.5);
+    -webkit-box-shadow: 0px 0px 20px 11px rgba(15, 47, 75, 0.5);
+    -moz-box-shadow: 0px 0px 20px 11px rgba(15, 47, 75, 0.5);
+     -webkit-transition: all .2s ease; 
+         transition: all .2 ease;
 }
 
-span {
-    color: #E6E4D6;
-  font-size: 3rem;
+p span {
+color: #E6E4D6;
+  font-size: 4rem;
+  line-height: 0;
+}
+h2 span {
+color: #E6E4D6;
+  font-size: 5rem;
   line-height: 0;
 }

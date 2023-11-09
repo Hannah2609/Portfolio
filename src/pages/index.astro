@@ -5,6 +5,7 @@ import Socials from "../components/socials.astro";
 import Slider from "../components/slider.astro";
 import Om from "../components/om.astro";
 import Kontakt from "../components/kontakt.astro";
+import Footer from "../components/footer.astro";
 ---
 
 <html lang="en">
@@ -21,24 +22,24 @@ import Kontakt from "../components/kontakt.astro";
       <section class="fullvh">	
         <div class="hero">
           <h1>
-            Hejsa 👋 <br /> Jeg er Hannah - kommende frontend designer som
+            Hejsa 👋🏽<br /> Jeg er Hannah - multimediedesigner og frontend udvikler som
             elsker at <span class="typewriter"> </span>
-          </h1>
-          <Socials />
         </div>
       </section>
 	  <Om/>
 	  <Slider />
 	  <Kontakt />
     </main>
+	<Footer />
   </body>
 </html>
 
 
 <style>
- span {
-	font-size: 3.4rem;
- }
+	span {
+		background-color: #E6E4D6;
+	}
+
   h1 {
     font-size: 2.5rem;
   }
@@ -46,21 +47,19 @@ import Kontakt from "../components/kontakt.astro";
     height: 90vh;
     display: flex;
     align-items: center;
-	
   }
   .hero {
-    max-width: 80vw;
+    max-width: 75vw;
   }
 
   @media (min-width: 800px) {
     h1 {
-      font-size: 3.5rem;
+      font-size: 3rem;
     }
 	  .hero {
-    max-width: 70vw;
+    max-width: 75vw;
   }
   }
-
 
 
   /* typewriter animation */

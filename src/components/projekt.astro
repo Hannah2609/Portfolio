@@ -11,10 +11,11 @@ const { overskrift, beskrivelse, billede, label1, label2, label3, label4 } =
   <h2>{overskrift}</h2>
   <h3>{beskrivelse}</h3>
   <div class="labels">
-    <p>{label1}</p>
+    <slot></slot>
+    <!-- <p>{label1}</p>
     <p>{label2}</p>
     <p>{label3}</p>
-    <p>{label4}</p>
+    <p>{label4}</p> -->
   </div>
 </article>
 
@@ -50,28 +51,18 @@ const { overskrift, beskrivelse, billede, label1, label2, label3, label4 } =
     object-fit: cover;
     aspect-ratio: 16:9;
   }
-
+  .imgFrame {
+        -webkit-transition: all .5s ease; 
+            transition: all .5 ease;
+  }
   .imgFrame:hover {
     box-shadow: 0px 0px 20px 11px rgba(230, 228, 214, 1);
     -webkit-box-shadow: 0px 0px 20px 11px rgba(230, 228, 214, 1);
     -moz-box-shadow: 0px 0px 20px 11px rgba(230, 228, 214, 1);
+        -webkit-transition: all .5s ease; 
+            transition: all .5 ease;
   }
 
-  .labels {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5em;
-   
-  } 
-  .labels p {
-    margin: 0;
-}
-  p {
-    font-size: 0.9rem;
-    border-radius: 20px;
-    padding: 5px 20px;
-    background-color: #e6e4d680;
-  }
   .snap {
     scroll-snap-align: start;
 }

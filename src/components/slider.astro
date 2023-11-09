@@ -8,60 +8,84 @@ import Projekt from "../components/projekt.astro";
   <Projekt 
     billede="omada.png"
     overskrift="Omada Wine & Deli"
-    beskrivelse="SoMe kampagne, bud på nye produktbilleder samt redesign af hjemmeside til Omada Wine & Deli på Østerbro."
-    label1="Astro"
-    label2="Redesign"
-    label3="Content"
-    label4="Video"
-  />
+    beskrivelse="SoMe kampagne, bud på nye produktbilleder samt redesign af hjemmeside."
+  >
+ <div class="labels">
+    <p>Redesign</p>
+    <p>Astro</p>
+    <p>Content</p>
+    <p>Videoproduktion</p>
+    <p>Figma</p>
+  </div></Projekt>
  
   <Projekt 
     billede="toDo.png"
     overskrift="ToDo app"
-    beskrivelse="Mini Todo webapp ved brug af Javascript og localeStorage."
-    label1="LocaleStorage"
-    label2="HTML & CSS"
-    label3="Javascript"
-    label4="Mini-projekt"
-  />
+    beskrivelse="Mini Todo webapp udviklet med Javascript og localeStorage så den gemmer ens todo-tasks."
+  > <div class="labels">
+    <p>LocaleStorage</p>
+    <p>HTML, CSS og Javascript</p>
+    <p>Mini-projekt</p>
+  </div></Projekt>
 
   <Projekt 
     billede="tommis.png"
     overskrift="Tommi's Burger Joint"
     beskrivelse="Website, SoMe content og markedsføringsplan til Tommi's Burger Joint."
-    label1="Astro"
-    label2="CSS"
-    label3="Javascript"
-    label4="redesign"
-  />
+> <div class="labels">
+    <p>Redesign</p>
+    <p>Astro</p>
+    <p>SoMe</p>
+    <p>Koncept</p>
+    <p>Videoproduktion</p>
+    <p>Figma</p>
+  </div></Projekt>
 
   <Projekt
     billede="sakura.png"
     overskrift="Sakura Festival"
     beskrivelse="Redesign af hjemmeside med fokus på forbedret brugeroplevelse på Sakura Festivals website."
-    label1="Astro"
-    label2="Webdesign"
-  />
+  > <div class="labels">
+    <p>Figma</p>
+    <p>Astro</p>
+    <p>Redesign</p>
+    <p>Brugertest</p>
+  </div></Projekt>
 
    <Projekt
     billede="coffeeFirst.png"
     overskrift="Coffee First"
     beskrivelse="Redesign af hjemmeside og SoMe video til lokal hunde cafe på Vesterbro."
-    label1="HTML"
-    label2="CSS"
-    label3="Javascript"
-    label4="redesign"
-  />
+  ><div class="labels">
+    <p>HTML, CSS og Javascript</p>
+    <p>Redesign</p>
+    <p>Videoproduktion</p>
+  </div></Projekt>
 
   <Projekt
     billede="styleOpg.png"
-    overskrift="Style opgave"
+    overskrift="Mini layout/design projekt"
     beskrivelse="Mini projekt med forskellige layouts og ét gennemgående styletile."
     label1="Figma"
     label2="CSS"
     label3="Layout"
     label4="Mini-projekt"
-  />
+  ><div class="labels">
+    <p>CSS</p>
+    <p>HTML</p>
+     <p>Figma</p>
+     <p>Design</p>
+  </div></Projekt>
+
+    <Projekt 
+    billede="spil.png"
+    overskrift="Simpelt Klikspil"
+    beskrivelse="Udvikling af klikspil herunder grafiske elementer"
+  > <div class="labels">
+    <p>Illustrator</p>
+    <p>HTML, CSS og Javascript</p>
+    <p>Animation</p>
+  </div></Projekt>
 </section>
 
 <style>
@@ -88,28 +112,37 @@ import Projekt from "../components/projekt.astro";
     gap: 1em;
     margin:2em;
     margin-left: -1em;
-       margin-right: -1em;
     padding-top: 2em;
+    margin-top: -2em;
+       margin-right: -4em;
     scroll-snap-type: x mandatory;
     
   }
   }
   h2 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 500;
   }
     article {
     scroll-snap-type:mandatory;
   }
 
-::-webkit-scrollbar {
-  -webkit-appearance: none;
-  width: 7px;
-}
 
-::-webkit-scrollbar-thumb {
-  border-radius: 4px;
-  background-color: rgba(255, 10, 10, 0.5);
-  box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+  .labels {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    margin-top: 1em;
+    margin-bottom: 2em;
+  } 
+  .labels p {
+    margin: 0;
+    color: #0F2F4B;;
 }
+  p {
+    font-size: 0.9rem;
+    border-radius: 20px;
+    padding: 5px 20px;
+    background-color: #e6e4d680;
+  }
 </style>

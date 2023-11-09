@@ -1,6 +1,7 @@
 ---
 import "../CSS/global.css";
-import Nav from "./nav.astro";
+import Socials from "./socials.astro";
+
 ---
 
 <header>
@@ -8,7 +9,7 @@ import Nav from "./nav.astro";
         Hannah Isabel <br />
         Grenade <span>.</span>
       </p>
-    <Nav />
+      <Socials />
 </header>
 
 <style>
@@ -17,11 +18,11 @@ p {
     font-weight: 500;
 }
 header {
+    height: 10vh;
+    margin-top: 3%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 10vh;
-    margin-top: 3%;
 }
 
 </style>
