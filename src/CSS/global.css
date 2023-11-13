@@ -9,6 +9,7 @@ body {
     margin: 0 auto;
     padding: 0 5%;
     max-width: 1500px;
+    overflow: scroll;
 }
 
 p {
